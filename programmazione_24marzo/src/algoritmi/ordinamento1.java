@@ -1,12 +1,20 @@
 //Implementa Selection Sort
 package algoritmi;
+import java.util.Scanner;
 
 public class ordinamento1 {
     
     public static void main(String[] args) {
         
-        int a[] = {7, 2, 5, 4, 6, 0, 3};
+        int[] a = new int[8];
         int temp = 0; //variable temporanea per lo swap
+        
+        //ciclo for per inizializzare l'array
+        for (int i = 0; i < a.length - 1; i++) {
+            Scanner tastiera = new Scanner(System.in);
+            System.out.println("Inserisci il " + i + "°" + " elemento");
+            a[i] = tastiera.nextInt();
+            }
         
         //primo ciclo for
         for (int i = 0; i < a.length; i++) {
@@ -26,6 +34,7 @@ public class ordinamento1 {
             a[min] = a[i]; //assegno l'elemento i dell'array all'elemento dove si trovava prima il valore minimo
             a[i] = temp; //ora nella posizione i inserisco il valore minimo
             //alla fine dell'iterazione ilvalore di i viene incrementato e l'array comincia dal valore successivo
+            System.out.print(i + " ");
         }
     }
 }
