@@ -10,7 +10,7 @@ public class ordinamento1 {
         int temp = 0; //variable temporanea per lo swap
         
         //ciclo for per inizializzare l'array
-        for (int i = 0; i < a.length - 1; i++) {
+        for (int i = 0; i < a.length; i++) {
             Scanner tastiera = new Scanner(System.in);
             System.out.println("Inserisci il " + i + "°" + " elemento");
             a[i] = tastiera.nextInt();
@@ -34,7 +34,10 @@ public class ordinamento1 {
             a[min] = a[i]; //assegno l'elemento i dell'array all'elemento dove si trovava prima il valore minimo
             a[i] = temp; //ora nella posizione i inserisco il valore minimo
             //alla fine dell'iterazione ilvalore di i viene incrementato e l'array comincia dal valore successivo
-            System.out.print(i + " ");
+        }
+        
+        for (int e : a) {
+            System.out.print(e + " ");
         }
     }
 }
