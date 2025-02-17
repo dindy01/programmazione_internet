@@ -1,5 +1,7 @@
 package algoritmi;
 import java.util.Scanner;
+import java.util.Arrays;
+
 public class bubblesort {
 
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class bubblesort {
         }
         tastiera.close();
         
+        //Arrays.sort(a);
         for (int i = 0; i < a.length - 1; i++) {
             boolean swapped = false;
             
