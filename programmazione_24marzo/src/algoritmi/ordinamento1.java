@@ -6,11 +6,11 @@ public class ordinamento1{
         
         int a[] = {7, 2, 5, 4, 1, 6, 0, 3};
         int temp = 0;
-        int min = 0;
+        
         
         for (int i = 0; i < a.length; i++) {
             
-            min = i;
+            int min = i;
             for (int j = i + 1; j < a.length; j++) {
                 if (a[min] > a[j]) {
                     min = j;
